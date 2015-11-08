@@ -7,8 +7,17 @@ gem 'rails-api'
 
 gem 'spring', :group => :development
 
+group :production do
 
-gem 'sqlite3'
+  gem 'pg'
+
+end
+
+group :development do
+
+  gem 'sqlite3'
+
+end
 
 
 
