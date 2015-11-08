@@ -2,6 +2,7 @@ module Api
   module V1
     class ClientsController < ApplicationController
         include ActionController::MimeResponds
+        before_action :authenticate, :only => :show
 
 
     # GET method - get all clients;
@@ -34,7 +35,8 @@ module Api
       def create
         @client = Client.new(client_params)
         if @client.save
-          render json: {message: 'created'}
+          render json: {message: 'client created'}
+
           # render 'show', formats: [:json], status: 201
         else
           render json: {error: "Client could not be created"}, status: 422
@@ -47,7 +49,7 @@ module Api
       def destroy
         @client = Client.find(params[:id])
         @client.destroy
-        render json: {message: 'deleted'}
+        render json: {message: 'clien deleted'}
       end
 
       #PUT method - update client details
