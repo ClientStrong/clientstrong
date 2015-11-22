@@ -2,6 +2,7 @@ module Api
 module V1
 
 class ClientsController < ApplicationController
+
   include ActionController::MimeResponds
   include ActionController::HttpAuthentication::Token::ControllerMethods
       

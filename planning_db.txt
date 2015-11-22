@@ -1,0 +1,110 @@
+DataBase>>
+
+  Users
+
+    id
+    first_name
+    last_name
+    username
+    password
+    image_id
+    birthday
+    gym_id
+    area_id
+
+  User_Email >> Table
+    
+    id
+    user_id
+    is_primary
+    is_confirmed
+    email
+    verification_code
+
+  Gym >> Table
+
+    id
+    gym_name
+    area_id
+    phone_number
+
+  Gym_Users(as_trainers)
+
+    gym_id
+    user_id
+
+  Role
+
+    id
+    name
+    description
+
+  User_Role
+
+    user_id
+    role_id
+
+  Permissions
+
+    id
+    name
+    description
+
+Role_Permission >> Table
+
+  role_id
+  permission_id
+
+Workout
+  
+  id
+  name
+  created_by_user (user_id)
+  description
+
+User(as_trainer)_created_workout
+
+  user_id
+  workout_id
+
+User(as_trainee)_did_workout
+
+  workout_id
+  user_id
+  result(score)
+
+Exercise
+  
+  id
+  name
+  description
+  tool_id
+  muscle_id
+
+Tool
+
+  id
+  name
+
+Muscle
+
+  id
+  name
+
+Type
+  
+  id
+  name
+  description
+
+Workout_Type
+
+  workout_id
+  type_id
+
+Workout_Exercise
+
+  workout_id
+  exercise_id
+
+
