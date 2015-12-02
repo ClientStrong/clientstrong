@@ -3,9 +3,12 @@ Rails.application.routes.draw do
   namespace :api do
       namespace :v1 do
         resources :users
-        resources :clients
-        resources :roles
-        root to: 'clients#index'
+        resources :roles 
+        resources :permissions
+        resources :workouts
+        get 'roles/:id/permissions' => 'roles#roles_permissions'
+        post 'roles/:id/permissions/:id' => 'permissions#add_permission_to_role'
+        root to: 'users#index'
       end
     end
   # The priority is based upon order of creation: first created -> highest priority.
@@ -15,7 +18,7 @@ Rails.application.routes.draw do
   # root 'welcome#index'
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    # get 'products/:id' => 'catalog#view'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

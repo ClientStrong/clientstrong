@@ -1,21 +1,22 @@
 class Api::V1::ApplicationController < ActionController::API
   include ActionController::MimeResponds
+  # include ActionController::Serialization
 
   private 
 
   def authenticate
     authenticate_or_request_with_http_token do |token, options|
-      @client = Client.where(api_key: token).first
+      @user = User.where(api_key: token).first
     end
   end
 
-  # NOTE: For ref
+  # NOTE: For reference
   # Manual way of authenticate request
   def authenticate_manual 
     api_key = request.headers['X-Api-Key']
-    @client = Client.where(api_key: api_key).first if api_key
+    @user = User.where(api_key: api_key).first if api_key
 
-    unless @client
+    unless @user
       head status: :unauthorized
       return false
     end
