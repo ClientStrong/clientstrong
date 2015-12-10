@@ -1,6 +1,6 @@
 class Api::V1::ApplicationController < ActionController::API
   include ActionController::MimeResponds
-  # include ActionController::Serialization
+  include ActionController::Serialization
 
   private 
 

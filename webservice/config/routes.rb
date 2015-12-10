@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+
   namespace :api do
       namespace :v1 do
         resources :users
@@ -8,6 +10,9 @@ Rails.application.routes.draw do
         resources :workouts
         get 'roles/:id/permissions' => 'roles#roles_permissions'
         post 'roles/:id/permissions/:id' => 'permissions#add_permission_to_role'
+        # get    'login'   => 'sessions#new'
+        post   'login'   => 'sessions#create'
+        delete 'logout'  => 'sessions#destroy'
         root to: 'users#index'
       end
     end

@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
   has_and_belongs_to_many :roles
+  has_and_belongs_to_many :workouts
 
   before_create do |doc|
     doc.api_key = User.generate_api_key

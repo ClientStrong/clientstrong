@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151130010857) do
+ActiveRecord::Schema.define(version: 20151207054934) do
 
   create_table "permissions", force: :cascade do |t|
     t.text "description"
@@ -47,6 +47,7 @@ ActiveRecord::Schema.define(version: 20151130010857) do
     t.string   "api_key"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "password"
   end
 
   create_table "workouts", force: :cascade do |t|
