@@ -43,11 +43,11 @@
     # User.find(11).roles << Role.find(4)
 
 # # Creating Exercises
-    Exercise.create(name: 'Workout 1', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 1)
-    Exercise.create(name: 'Exercise 2', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 2)
-    Exercise.create(name: 'Exercise 3', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 3)
-    Exercise.create(name: 'Exercise 4', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 4)
-    Exercise.create(name: 'Exercise 5', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 5)
+    Exercise.create(name: 'Barbell Squat', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 1, image_url: 'http://bbcom.me/1THbemS', video_url: 'https://youtu.be/SW_C1A-rejs')
+    Exercise.create(name: 'Body Squat', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 2, image_url: 'http://bit.ly/1yP9tIu', video_url: 'https://youtu.be/dr8v0dCdbP0')
+    Exercise.create(name: 'Push Up', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 3, image_url: 'http://bit.ly/21WUq1j', video_url: 'https://youtu.be/WpobgeNpOCI')
+    Exercise.create(name: 'Lunge', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 4, image_url: 'http://bit.ly/1RJQhJI', video_url: 'https://youtu.be/D7KaRcUTQeE')
+    Exercise.create(name: 'Burpee', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 5, image_url: 'http://bit.ly/1NhpVvv', video_url: 'https://youtu.be/JZQA08SlJnM')
 
 # # Creating Permissions
 #     Permission.create(description: 'login')

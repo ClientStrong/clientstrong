@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20151130002507) do
     t.text    "description"
     t.integer "author"
     t.integer "intensity"
+    t.string  "image_url"
+    t.string  "video_url"
   end
 
   create_table "members", force: :cascade do |t|

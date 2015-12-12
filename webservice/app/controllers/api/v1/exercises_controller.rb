@@ -88,7 +88,7 @@ module Api
 
       def exercise_params
         # :author will be current user do we still need to whitelist that attribute?
-        params.require(:exercise).permit(:name, :description, :author, :intensity)
+        params.require(:exercise).permit(:name, :description, :author, :intensity, :image_url, :video_url)
       end
     end 
   end
