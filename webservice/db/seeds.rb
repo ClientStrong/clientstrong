@@ -6,19 +6,13 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-# Creating Clients
+# Creating Members
 
-    User.create(first_name: 'Snow', last_name: 'White', notes: 'Snow white is a kinda and gentle princess, with lips red as as rose and skin white as sknow.', email: 'snow.white@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Doc', last_name: 'Dwarf', notes: 'Self proclaimed leader of the group, Doc often looses his train of thought and bumbles around, looking over the dwarfs.', email: 'doc.dwarf@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Dopey', last_name: 'Dwarf', notes: 'Although Dopey may annoy Doc & Grumpy, his intentions are silly and he is often the core of the dwarfs jokes.', email: 'dopey.dwarf@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Bashful', last_name: 'Dwarf', notes: 'Being around Snow White increases bashfuls tendency to bury his head but she does not mind.', email: 'bashful.dwarf@clientstrong.com', active: false, password: 'pass')
-    User.create(first_name: 'Happy', last_name: 'Dwarf', notes: 'Fat and jolly with a friendly personality, Happy maintains laughter and joy amongst the dwarfs.', email: 'happy.dwarf@clientstrong.com', active: false, password: 'pass')
-    User.create(first_name: 'Sleepy', last_name: 'Dwarf', notes: 'While always eager to fall asleep, Sleepy is considered the most observant amongst the dwarfs.', email: 'sleepy.dwarf@clientstrong.com', active: false, password: 'pass')
-    User.create(first_name: 'Sneezy', last_name: 'Dwarf', notes: 'A bad case of hayfever causes Sneezy to sneeze violently and frequently but he does not let that stop him from having fun.', email: 'sneezy.dwarf@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Grumpy', last_name: 'Dwarf', notes: 'Grumpy tends to be irritated with the other dwarfs antics and opposes allowing Snow White to stay with them.', email: 'grumpy.dwarf@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Prince', last_name: 'Charming', notes: 'The cure to Snow Whites sleeping death, the Prince finds Snow White in the forest and kisses her to awaken her.', email: 'prince.charming@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'The', last_name: 'Queen', notes: 'Due to extreme jealously of Snow White, the Evil Queen plots how to remain the fairest of them all.', email: 'the.queen@clientstrong.com', active: true, password: 'pass')
-    User.create(first_name: 'Huntsman', last_name: 'Who', notes: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', email: 'huntsman.who@clientstrong.com', active: true, password: 'pass')
+    Member.create(email: 'snow.white@clientstrong.com', password: "password", first_name: 'Snow', last_name: 'White', address: 'Fairytale', mobile: '345-332-1233', birthday: '1902-01-01')
+    Member.create(email: 'doc.dwarf@clientstrong.com', password: "password", first_name: 'Doc', last_name: 'Dwarf', address: 'Fairytale', mobile: '345-332-1233', birthday: '1902-01-01')
+    Member.create(email: 'dopey.dwarf@clientstrong.com', password: "password", first_name: 'Dopey', last_name: 'Dwarf', address: 'Fairytale', mobile: '345-332-1233', birthday: '1902-01-01')
+    Member.create(email: 'bashful.dwarf@clientstrong.com', password: "password", first_name: 'Bashful', last_name: 'Dwarf', address: 'Fairytale', mobile: '345-332-1233', birthday: '1902-01-01')
+    Member.create(email: 'huntsman.who@clientstrong.com', password: "password", first_name: 'Huntsman', last_name: 'Who', address: 'Fairytale', mobile: '345-332-1233', birthday: '1902-01-01')
 
 # Creating Roles
 
@@ -29,64 +23,64 @@
 
 # Assigning roles to Clients
 
-    # Admin
-    User.first.roles << Role.first
+#     # Admin
+    Member.first.roles << Role.first
 
-    # #Trainer
-    User.find(2).roles << Role.find(2)
-    User.find(3).roles << Role.find(2)
+#     # #Trainer
+    Member.find(2).roles << Role.find(2)
+    # Member.find(3).roles << Role.find(2)
 
-    # #Student
-    User.find(4).roles << Role.find(3)
-    User.find(5).roles << Role.find(3)
-    User.find(6).roles << Role.find(3)
-    User.find(7).roles << Role.find(3)
-    User.find(8).roles << Role.find(3)
-    User.find(9).roles << Role.find(3)
+#     # #Student
+    Member.find(3).roles << Role.find(3)
+    Member.find(4).roles << Role.find(3)
+#     User.find(6).roles << Role.find(3)
+#     User.find(7).roles << Role.find(3)
+#     User.find(8).roles << Role.find(3)
+#     User.find(9).roles << Role.find(3)
 
-    # #Anonymous
-    User.find(10).roles << Role.find(4)
-    User.find(11).roles << Role.find(4)
+#     # #Anonymous
+    Member.find(5).roles << Role.find(4)
+    # User.find(11).roles << Role.find(4)
 
-# Creating Workouts
-    Workout.create(title: 'Workout 1', duration: 30, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 1)
-    Workout.create(title: 'Workout 2', duration: 30, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 2)
-    Workout.create(title: 'Workout 3', duration: 60, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 3)
-    Workout.create(title: 'Workout 4', duration: 60, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 4)
-    Workout.create(title: 'Workout 5', duration: 60, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 5)
+# # Creating Exercises
+    Exercise.create(name: 'Workout 1', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 1)
+    Exercise.create(name: 'Exercise 2', author: 1, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 2)
+    Exercise.create(name: 'Exercise 3', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 3)
+    Exercise.create(name: 'Exercise 4', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 4)
+    Exercise.create(name: 'Exercise 5', author: 2, description: 'Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen.', intensity: 5)
 
-# Creating Permissions
-    Permission.create(description: 'login')
-    Permission.create(description: 'create-users')
-    Permission.create(description: 'create-workouts')
-    Permission.create(description: 'view-workouts')
-    Permission.create(description: 'view-users')
-    Permission.create(description: 'view-personal-clients')
-    Permission.create(description: 'view-personal-workouts')
+# # Creating Permissions
+#     Permission.create(description: 'login')
+#     Permission.create(description: 'create-users')
+#     Permission.create(description: 'create-workouts')
+#     Permission.create(description: 'view-workouts')
+#     Permission.create(description: 'view-users')
+#     Permission.create(description: 'view-personal-clients')
+#     Permission.create(description: 'view-personal-workouts')
 
-# Assign permissions to roles
+# # Assign permissions to roles
 
-    # # Admin
-    Role.find(1).permissions << Permission.find(1)
-    Role.find(1).permissions << Permission.find(2)
-    Role.find(1).permissions << Permission.find(3)
-    Role.find(1).permissions << Permission.find(4)
-    Role.find(1).permissions << Permission.find(5)
+#     # # Admin
+#     Role.find(1).permissions << Permission.find(1)
+#     Role.find(1).permissions << Permission.find(2)
+#     Role.find(1).permissions << Permission.find(3)
+#     Role.find(1).permissions << Permission.find(4)
+#     Role.find(1).permissions << Permission.find(5)
 
-    # # Trainer
-    Role.find(2).permissions << Permission.find(1)
-    Role.find(2).permissions << Permission.find(2)
-    Role.find(2).permissions << Permission.find(3)
-    Role.find(2).permissions << Permission.find(6)
-    Role.find(2).permissions << Permission.find(7)
+#     # # Trainer
+#     Role.find(2).permissions << Permission.find(1)
+#     Role.find(2).permissions << Permission.find(2)
+#     Role.find(2).permissions << Permission.find(3)
+#     Role.find(2).permissions << Permission.find(6)
+#     Role.find(2).permissions << Permission.find(7)
 
-    # # Student
-    Role.find(3).permissions << Permission.find(1)
-    Role.find(3).permissions << Permission.find(4)
-    Role.find(3).permissions << Permission.find(7)
+#     # # Student
+#     Role.find(3).permissions << Permission.find(1)
+#     Role.find(3).permissions << Permission.find(4)
+#     Role.find(3).permissions << Permission.find(7)
 
-    # # Anonymous
-    Role.find(4).permissions << Permission.find(4)
+#     # # Anonymous
+#     Role.find(4).permissions << Permission.find(4)
 
 
 

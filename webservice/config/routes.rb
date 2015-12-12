@@ -4,16 +4,13 @@ Rails.application.routes.draw do
 
   namespace :api do
       namespace :v1 do
-        resources :users
+        resources :members
         resources :roles 
-        resources :permissions
-        resources :workouts
-        get 'roles/:id/permissions' => 'roles#roles_permissions'
-        post 'roles/:id/permissions/:id' => 'permissions#add_permission_to_role'
+        resources :exercises
         # get    'login'   => 'sessions#new'
         post   'login'   => 'sessions#create'
         delete 'logout'  => 'sessions#destroy'
-        root to: 'users#index'
+        root to: 'members#index'
       end
     end
   # The priority is based upon order of creation: first created -> highest priority.
