@@ -3,7 +3,7 @@ class Member < ActiveRecord::Base
   include ActiveModel::Serializers::JSON
 
   has_and_belongs_to_many :roles
-  has_and_belongs_to_many :exercises
+  # has_and_belongs_to_many :exercises
 
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
