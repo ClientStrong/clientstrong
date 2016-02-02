@@ -1,0 +1,538 @@
+
+
+Started GET "/api/v1/members" for ::1 at 2015-12-28 17:15:27 -0800
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  rack-contrib (1.4.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.3ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.2ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2015-12-28 17:16:32 -0800
+
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+):
+  activerecord (4.2.4) lib/active_record/migration.rb:392:in `check_pending!'
+  activerecord (4.2.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.4) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  rack-contrib (1.4.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/aiste/.rvm/rubies/ruby-2.2.0/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (50.0ms)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMembers (20151108051440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  CREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "first_name" varchar, "last_name" varchar, "address" varchar, "mobile" varchar, "birthday" date, "api_key" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151108051440"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to AddRoleTable (20151119221004)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151119221004"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateJoinTableMemberRole (20151119221651)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "members_roles" ("member_id" integer NOT NULL, "role_id" integer NOT NULL) 
+  [1m[36m (0.3ms)[0m  [1mCREATE  INDEX "index_members_roles_on_member_id_and_role_id" ON "members_roles" ("member_id", "role_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_members_roles_on_role_id_and_member_id" ON "members_roles" ("role_id", "member_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151119221651"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateExercises (20151130002507)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "author" integer, "intensity" integer, "image_url" varchar, "video_url" varchar) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151130002507"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_role_id_and_member_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_role_id_and_member_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'snow.white@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.2ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "nU2flpRGsvDa8nReHfgAPQtt"]]
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "snow.white@clientstrong.com"], ["password", "password"], ["first_name", "Snow"], ["last_name", "White"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2015-12-29 01:17:11.536911"], ["updated_at", "2015-12-29 01:17:11.536911"], ["api_key", "nU2flpRGsvDa8nReHfgAPQtt"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMember Exists (0.2ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."email" = 'doc.dwarf@clientstrong.com' LIMIT 1
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1[0m  [["api_key", "MiM7zutxfa6JGdILY7SYKQtt"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["email", "doc.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Doc"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2015-12-29 01:17:11.559872"], ["updated_at", "2015-12-29 01:17:11.559872"], ["api_key", "MiM7zutxfa6JGdILY7SYKQtt"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'dopey.dwarf@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "am7PF6nl3wXNATn3ZNZyqQtt"]]
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "dopey.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Dopey"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2015-12-29 01:17:11.574505"], ["updated_at", "2015-12-29 01:17:11.574505"], ["api_key", "am7PF6nl3wXNATn3ZNZyqQtt"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMember Exists (0.3ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."email" = 'bashful.dwarf@clientstrong.com' LIMIT 1
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1[0m  [["api_key", "3zrDbDajBw3CgZHUvLHgkgtt"]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["email", "bashful.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Bashful"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2015-12-29 01:17:11.591381"], ["updated_at", "2015-12-29 01:17:11.591381"], ["api_key", "3zrDbDajBw3CgZHUvLHgkgtt"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'huntsman.who@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "gHcL4yBEOBNS8bwhO2sccgtt"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "huntsman.who@clientstrong.com"], ["password", "password"], ["first_name", "Huntsman"], ["last_name", "Who"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2015-12-29 01:17:11.606428"], ["updated_at", "2015-12-29 01:17:11.606428"], ["api_key", "gHcL4yBEOBNS8bwhO2sccgtt"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "roles" ("name", "description") VALUES (?, ?)  [["name", "admin"], ["description", "access to all profiles, all lists"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "roles" ("name", "description") VALUES (?, ?)[0m  [["name", "coach"], ["description", "access to all their client profiles"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "roles" ("name", "description") VALUES (?, ?)  [["name", "student"], ["description", "access to their profile, their own workouts"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "roles" ("name", "description") VALUES (?, ?)[0m  [["name", "anonymous"], ["description", "have access to unprotected areas"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mMember Load (0.2ms)[0m  [1mSELECT  "members".* FROM "members"  ORDER BY "members"."id" ASC LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles"  ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 1], ["role_id", 1]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mMember Load (0.4ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)[0m  [["member_id", 2], ["role_id", 2]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 3], ["role_id", 3]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mMember Load (0.1ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)[0m  [["member_id", 4], ["role_id", 3]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 5], ["role_id", 4]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Barbell Squat' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Barbell Squat"], ["author", 1], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 1], ["image_url", "http://bbcom.me/1THbemS"], ["video_url", "https://youtu.be/SW_C1A-rejs"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Body Squat' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Body Squat"], ["author", 1], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 2], ["image_url", "http://bit.ly/1yP9tIu"], ["video_url", "https://youtu.be/dr8v0dCdbP0"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Push Up' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Push Up"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 3], ["image_url", "http://bit.ly/21WUq1j"], ["video_url", "https://youtu.be/WpobgeNpOCI"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Lunge' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Lunge"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 4], ["image_url", "http://bit.ly/1RJQhJI"], ["video_url", "https://youtu.be/D7KaRcUTQeE"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Burpee' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Burpee"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 5], ["image_url", "http://bit.ly/1NhpVvv"], ["video_url", "https://youtu.be/JZQA08SlJnM"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/members" for ::1 at 2015-12-28 17:17:17 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.4ms)[0m  SELECT "members".* FROM "members"
+Completed 200 OK in 68ms (Views: 43.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2015-12-28 17:17:48 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.5ms)[0m  [1mSELECT "members".* FROM "members"[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 1]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?[0m  [["member_id", 2]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 3]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?[0m  [["member_id", 4]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 5]]
+Completed 200 OK in 130ms (Views: 1.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-07 00:33:44 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.5ms)[0m  SELECT "members".* FROM "members"
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `post' for #<Api::V1::MembersController:0x007fce05230598>):
+  app/controllers/api/v1/members_controller.rb:26:in `block in index'
+  app/controllers/api/v1/members_controller.rb:24:in `index'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.5ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-07 00:34:10 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.6ms)[0m  [1mSELECT "members".* FROM "members"[0m
+Completed 406 Not Acceptable in 51ms (Views: 33.3ms | ActiveRecord: 1.0ms)
+
+ActionController::UnknownFormat (ActionController::UnknownFormat):
+  app/controllers/api/v1/members_controller.rb:24:in `index'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.6ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-07 00:34:33 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.5ms)[0m  SELECT "members".* FROM "members"
+Completed 200 OK in 33ms (Views: 21.3ms | ActiveRecord: 1.2ms)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateMembers (20151108051440)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "members" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "password" varchar, "first_name" varchar, "last_name" varchar, "address" varchar, "mobile" varchar, "birthday" date, "api_key" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151108051440"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to AddRoleTable (20151119221004)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" varchar) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20151119221004"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateJoinTableMemberRole (20151119221651)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "members_roles" ("member_id" integer NOT NULL, "role_id" integer NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_members_roles_on_member_id_and_role_id" ON "members_roles" ("member_id", "role_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_members_roles_on_role_id_and_member_id" ON "members_roles" ("role_id", "member_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151119221651"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateExercises (20151130002507)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "exercises" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "description" text, "author" integer, "intensity" integer, "image_url" varchar, "video_url" varchar) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151130002507"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_role_id_and_member_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_role_id_and_member_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_members_roles_on_member_id_and_role_id' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'snow.white@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "8AKwdBHaHaqljDKlkvraLAtt"]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "snow.white@clientstrong.com"], ["password", "password"], ["first_name", "Snow"], ["last_name", "White"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2016-01-07 08:35:12.377226"], ["updated_at", "2016-01-07 08:35:12.377226"], ["api_key", "8AKwdBHaHaqljDKlkvraLAtt"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."email" = 'doc.dwarf@clientstrong.com' LIMIT 1
+  [1m[36mMember Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1[0m  [["api_key", "Cji7Q5KCRNOlWsUQpQaUTgtt"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["email", "doc.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Doc"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2016-01-07 08:35:12.391207"], ["updated_at", "2016-01-07 08:35:12.391207"], ["api_key", "Cji7Q5KCRNOlWsUQpQaUTgtt"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'dopey.dwarf@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.0ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "1szbqnUoeEJSjReFoZuoWwtt"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "dopey.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Dopey"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2016-01-07 08:35:12.401673"], ["updated_at", "2016-01-07 08:35:12.401673"], ["api_key", "1szbqnUoeEJSjReFoZuoWwtt"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."email" = 'bashful.dwarf@clientstrong.com' LIMIT 1
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1[0m  [["api_key", "makSYWltXyO5GhAHkVFFagtt"]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["email", "bashful.dwarf@clientstrong.com"], ["password", "password"], ["first_name", "Bashful"], ["last_name", "Dwarf"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2016-01-07 08:35:12.411655"], ["updated_at", "2016-01-07 08:35:12.411655"], ["api_key", "makSYWltXyO5GhAHkVFFagtt"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'huntsman.who@clientstrong.com' LIMIT 1[0m
+  [1m[35mMember Exists (0.1ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1  [["api_key", "59UZOXr6A3wlwDKIfgscoQtt"]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "huntsman.who@clientstrong.com"], ["password", "password"], ["first_name", "Huntsman"], ["last_name", "Who"], ["address", "Fairytale"], ["mobile", "345-332-1233"], ["birthday", "1902-01-01"], ["created_at", "2016-01-07 08:35:12.421042"], ["updated_at", "2016-01-07 08:35:12.421042"], ["api_key", "59UZOXr6A3wlwDKIfgscoQtt"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "roles" ("name", "description") VALUES (?, ?)  [["name", "admin"], ["description", "access to all profiles, all lists"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "roles" ("name", "description") VALUES (?, ?)[0m  [["name", "coach"], ["description", "access to all their client profiles"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "roles" ("name", "description") VALUES (?, ?)  [["name", "student"], ["description", "access to their profile, their own workouts"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "roles" ("name", "description") VALUES (?, ?)[0m  [["name", "anonymous"], ["description", "have access to unprotected areas"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT  "members".* FROM "members"  ORDER BY "members"."id" ASC LIMIT 1[0m
+  [1m[35mRole Load (0.2ms)[0m  SELECT  "roles".* FROM "roles"  ORDER BY "roles"."id" ASC LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 1], ["role_id", 1]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mMember Load (0.2ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mRole Load (0.3ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)[0m  [["member_id", 2], ["role_id", 2]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 3], ["role_id", 3]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mMember Load (0.1ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)[0m  [["member_id", 4], ["role_id", 3]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "members_roles" ("member_id", "role_id") VALUES (?, ?)  [["member_id", 5], ["role_id", 4]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Barbell Squat' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Barbell Squat"], ["author", 1], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 1], ["image_url", "http://bbcom.me/1THbemS"], ["video_url", "https://youtu.be/SW_C1A-rejs"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Body Squat' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Body Squat"], ["author", 1], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 2], ["image_url", "http://bit.ly/1yP9tIu"], ["video_url", "https://youtu.be/dr8v0dCdbP0"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Push Up' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Push Up"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 3], ["image_url", "http://bit.ly/21WUq1j"], ["video_url", "https://youtu.be/WpobgeNpOCI"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Lunge' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Lunge"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 4], ["image_url", "http://bit.ly/1RJQhJI"], ["video_url", "https://youtu.be/D7KaRcUTQeE"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mExercise Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "exercises" WHERE "exercises"."name" = 'Burpee' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "exercises" ("name", "author", "description", "intensity", "image_url", "video_url") VALUES (?, ?, ?, ?, ?, ?)  [["name", "Burpee"], ["author", 2], ["description", "Tasked with getting rid of Snow White, the huntsman realizes he cannot and encourages her to run away from the Evil Queen."], ["intensity", 5], ["image_url", "http://bit.ly/1NhpVvv"], ["video_url", "https://youtu.be/JZQA08SlJnM"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-07 00:35:15 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.4ms)[0m  [1mSELECT "members".* FROM "members"[0m
+Completed 200 OK in 31ms (Views: 19.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-07 00:35:16 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.2ms)[0m  SELECT "members".* FROM "members"
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-27 23:31:51 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.4ms)[0m  SELECT "members".* FROM "members"
+Completed 200 OK in 34ms (Views: 14.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-27 23:31:54 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT "members".* FROM "members"[0m
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-27 23:33:24 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.3ms)[0m  SELECT "members".* FROM "members"
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/api/v1/members" for ::1 at 2016-01-27 23:33:34 -0800
+Processing by Api::V1::MembersController#create as */*
+  Parameters: {"member"=>{"email"=>"snowwhite4@cs.ca", "password"=>"[FILTERED]", "first_name"=>"snow", "last_name"=>"white", "address"=>"street somewhere", "mobile"=>"234-234-3456", "birthday"=>"1902-12-02"}, "role_id"=>2}
+  [1m[36mMember Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."email" = 'snowwhite4@cs.ca' LIMIT 1[0m
+  [1m[35mRole Load (0.8ms)[0m  SELECT  "roles".* FROM "roles" WHERE "roles"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  1 AS one FROM "members" WHERE "members"."email" = 'snowwhite4@cs.ca' LIMIT 1
+  [1m[36mMember Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "members" WHERE "members"."api_key" = ? LIMIT 1[0m  [["api_key", "aZPHJHMqXkOq4ewgjNYAaAtt"]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "members" ("email", "password", "first_name", "last_name", "address", "mobile", "birthday", "created_at", "updated_at", "api_key") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["email", "snowwhite4@cs.ca"], ["password", "password"], ["first_name", "snow"], ["last_name", "white"], ["address", "street somewhere"], ["mobile", "234-234-3456"], ["birthday", "1902-12-02"], ["created_at", "2016-01-28 07:33:35.057052"], ["updated_at", "2016-01-28 07:33:35.057052"], ["api_key", "aZPHJHMqXkOq4ewgjNYAaAtt"]]
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "members_roles" ("role_id", "member_id") VALUES (?, ?)[0m  [["role_id", 2], ["member_id", 6]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 200 OK in 112ms (Views: 2.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-27 23:33:39 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[36mMember Load (0.3ms)[0m  [1mSELECT "members".* FROM "members"[0m
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/api/v1/members" for ::1 at 2016-01-27 23:35:04 -0800
+Processing by Api::V1::MembersController#index as */*
+  [1m[35mMember Load (0.4ms)[0m  SELECT "members".* FROM "members"
+  [1m[36mRole Load (0.2ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?[0m  [["member_id", 1]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 2]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?[0m  [["member_id", 3]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 4]]
+  [1m[36mRole Load (0.1ms)[0m  [1mSELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?[0m  [["member_id", 5]]
+  [1m[35mRole Load (0.1ms)[0m  SELECT "roles".* FROM "roles" INNER JOIN "members_roles" ON "roles"."id" = "members_roles"."role_id" WHERE "members_roles"."member_id" = ?  [["member_id", 6]]
+Completed 200 OK in 49ms (Views: 1.1ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/api/v1/members/2" for ::1 at 2016-01-27 23:35:18 -0800
+Processing by Api::V1::MembersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mMember Load (0.4ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::StatementInvalid (Could not find table 'exercises_members'):
+  app/controllers/api/v1/members_controller.rb:89:in `destroy'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (43.2ms)
+
+
+Started GET "/api/v1/exercises" for ::1 at 2016-01-27 23:36:59 -0800
+Processing by Api::V1::ExercisesController#index as */*
+  [1m[35mExercise Load (0.2ms)[0m  SELECT "exercises".* FROM "exercises"
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/api/v1/members/2" for ::1 at 2016-01-27 23:37:17 -0800
+Processing by Api::V1::MembersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mMember Load (0.1ms)[0m  [1mSELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::StatementInvalid (Could not find table 'exercises_members'):
+  app/controllers/api/v1/members_controller.rb:89:in `destroy'
+
+
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/aiste/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (39.7ms)
+
+
+Started DELETE "/api/v1/members/2" for ::1 at 2016-01-27 23:39:51 -0800
+Processing by Api::V1::MembersController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mMember Load (0.1ms)[0m  SELECT  "members".* FROM "members" WHERE "members"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "members_roles" WHERE "members_roles"."member_id" = ?  [["member_id", 2]]
+  [1m[36mSQL (0.1ms)[0m  [1mDELETE FROM "members" WHERE "members"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 200 OK in 35ms (Views: 1.1ms | ActiveRecord: 3.2ms)
